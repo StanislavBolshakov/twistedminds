@@ -1,0 +1,54 @@
+.post-content p {
+  text-align: justify;
+}
+
+.post-content {
+  overflow-x: auto;
+}
+
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.post-content table tr:first-child th {
+  border-top: 1px solid rgba(127, 127, 127, 0.3) !important;
+}
+
+.post-content table tr:last-child td {
+  border-bottom: 1px solid rgba(127, 127, 127, 0.3) !important;
+}
+
+.post-content table tr td:first-child,
+.post-content table tr th:first-child {
+  border-left: 1px solid rgba(127, 127, 127, 0.3) !important;
+}
+
+.post-content table tr td:last-child,
+.post-content table tr th:last-child {
+  border-right: 1px solid rgba(127, 127, 127, 0.3) !important;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid rgba(127, 127, 127, 0.3) !important;
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+}
+
+.post-content th {
+  background: rgba(127, 127, 127, 0.1);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.post-content tbody tr:nth-child(even) {
+  background: rgba(127, 127, 127, 0.05);
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}

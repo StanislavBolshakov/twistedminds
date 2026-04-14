@@ -1,0 +1,74 @@
+baseURL = "https://twistedminds.ru/"
+title = "Twistedminds"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+[pagination]
+pagerSize = 20
+
+[markup]
+[markup.highlight]
+noClasses = false
+style = "github-dark"
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[params]
+author = "Stanislav Bolshakov"
+description = "Networking, storage, virtualization and beyond"
+keywords = "blog,networking,cisco,storage,netapp,virtualization,wireless"
+since = 2009
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = ["css/custom.css"]
+dateFormat = "January 2, 2006"
+summaryLength = 1000
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/stanislaus"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 2
+url = "https://www.linkedin.com/in/stanislavbolshakov/"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa-brands fa-x-twitter fa-2x"
+weight = 3
+url = "https://twitter.com/"
+
+[[params.social]]
+name = "RSS"
+icon = "fa-solid fa-rss fa-2x"
+weight = 4
+url = "/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
+[[menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[menu.main]]
+name = "About"
+weight = 2
+url = "about/"
