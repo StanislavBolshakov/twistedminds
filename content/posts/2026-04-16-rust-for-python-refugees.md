@@ -1,7 +1,7 @@
 ---
 title: 'Rust для беженцев с Python - 1'
 author: ["Stanislav"]
-date: 2026-06-18T11:00:00+03:00
+date: 2026-04-18T11:00:00+00:00
 url: /2026/06/rust-for-python-refugees-1/
 categories:
   - Tech
