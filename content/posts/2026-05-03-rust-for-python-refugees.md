@@ -177,7 +177,7 @@ fn main() {
 }
 ```
 
-Буква T в Vec<T> означает “какой-то конкретный тип”. Например, Vec<u16>, Vec<String>, Vec<User>. Вектор чисел, вектор строк, вектор пользователей. Но не солянка из строки, числа и списка ролей.
+Буква `T` в `Vec<T>` означает “какой-то конкретный тип”. Например, `Vec<u16>`, `Vec<String>`, `Vec<User>`. Вектор чисел, вектор строк, вектор пользователей. Но не солянка из строки, числа и списка ролей.
 
 Вектор характеризуется длиной (сколько элементов сейчас лежит внутри) и емкостью (сколько элементов можно положить без нового выделения памяти):
 
@@ -238,19 +238,14 @@ queue.insert(0, "urgent")  # опять O(n)
 Начальное состояние, при capacity(8):
 [ task-1 | task-2 | task-3 | _ | _ | _ | _ | _ ]
   ^ head                     ^ tail
-```
 
-```
 После pop_front():
 [ _ | task-2 | task-3 | _ | _ | _ | _ | _ ]
       ^ head            ^ tail
-      
-```
 
-```
 После push_back("task-4"):
 [ _ | task-2 | task-3 | task-4 | _ | _ | _ | _ ]
-      ^ head             ^ tail
+      ^ head                     ^ tail
 ```
 
 ```rust
@@ -325,7 +320,7 @@ fn main() {
 
 ## Словари и хешмапы
 
-В Rust HashMap<K, V> эквивалент `dict` в Python. 
+В Rust `HashMap<K, V>` эквивалент `dict` в Python. 
 
 ```python
 services = {}
@@ -335,7 +330,7 @@ services["neutron-api"] = 9696
 services["keystone"] = 5000
 ```
 
-Но с приправой Rust. Не "ключи +/- строки, а значения что бог пошлет", а конкретно: HashMap<String, u16>:
+Но с приправой Rust. Не "ключи +/- строки, а значения что бог пошлет", а конкретно: `HashMap<String, u16>`:
 
 ```rust
 use std::collections::HashMap;
@@ -351,7 +346,7 @@ fn main() {
 }
 ```
 
-или HashMap<String, Vec<String>>:
+или `HashMap<String, Vec<String>>`:
 
 ```rust
 use std::collections::HashMap;
@@ -374,7 +369,7 @@ fn main() {
 }
 ```
 
-или HashMap<&str, &str>:
+или `HashMap<&str, &str>`:
 
 ```rust
 use std::collections::HashMap;
